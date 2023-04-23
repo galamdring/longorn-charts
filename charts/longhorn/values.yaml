@@ -270,13 +270,13 @@ longhornRecoveryBackend:
 
 ingress:
   ## Set to true to enable ingress record generation
-  enabled: false
+  enabled: true
 
   ## Add ingressClassName to the Ingress
   ## Can replace the kubernetes.io/ingress.class annotation on v1.18+
-  ingressClassName: ~
+  ingressClassName: traefik
 
-  host: sslip.io
+  host: longhorn.lukemckechnie.com
 
   ## Set this to true in order to enable TLS on the ingress record
   tls: false
